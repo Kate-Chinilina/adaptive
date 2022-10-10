@@ -1,0 +1,374 @@
+/* global reset */
+html, body, body div, div, span, label, h1, h2, h3, h4, h5, h6, p, a, em, img, s, small, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, button, form, fieldset, article, aside, footer, header, main, nav, section, input, textarea, select, option {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    list-style: none;
+    }
+
+    html * {
+    max-height: 10000000px;
+    }
+
+    a {
+    text-decoration: none;
+    }
+
+    button {
+    cursor: pointer;
+    }
+ /* ===================================================== */
+    /* structure */
+
+    html{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+        display:flex;
+        background:#fff;
+        flex-direction: column;
+    }
+
+    @font-face {
+        font-family:"Roboto";
+        src: url('../fons/Roboto-Light.ttf');
+        src: url('../fons/Roboto-Regular.ttf');
+    }
+
+    h1{
+        Font-family: "Roboto";
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 74px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+    }
+
+    h2{
+        font-family: "Roboto";
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 0.05em;
+    }
+
+    h3{
+        font-family: "Roboto";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+    }
+
+    p{
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color:#1F3F68;
+        opacity: 60%;
+    }
+
+/* ===================header================================== */
+
+header{
+    background: linear-gradient(0deg, rgb(171, 207, 233)10%,rgba(152, 195, 232, 0)30%);
+        z-index:-2;
+    }
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav{
+height: 48px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 100px;
+}
+
+header .column{
+    /* border:solid; */
+    height: 390px;
+    width: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.block a p{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom:150px;
+}
+
+
+
+ .arrow{
+    /* border: solid; */
+    display: flex;
+    align-self: start;
+ }
+
+
+button{
+    width: 220px;
+    height: 56px;
+    background: #5A98D0;
+    height: 56px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        color:white;
+    }
+
+
+ /* -----------------------------------------------*/
+main{
+    flex: 0 auto;
+    padding-bottom: 100px;
+    }
+main h2{
+    text-align: center;
+    margin: 70px 0;
+}
+
+
+
+main .container{
+    display: flex;
+    justify-content: space-between;
+}
+.block{
+    height: 480px;
+    width: 300px;
+    padding: 0 30px;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.2);
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.block :first-child{
+    margin: 0 auto;
+}
+
+.text_block{
+height: 250px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+.trio_photo {
+
+    border-radius: 10px;
+    color: white;
+
+}
+
+
+.photo_1{
+    width:auto;
+    height: 480px;
+    background: url(../img/jpg/1.jpg);
+    background-size: contain;
+    margin: 15px 0;
+    position: relative;
+}
+
+.photo_1 h3{
+    position: absolute;
+    top:64px;
+    right:64px;
+    font-size: 28px;
+}
+
+.photo_2{
+    width:554px;
+    height: 417px;
+    background: url(../img/jpg/2.jpg);
+    margin: 15px 0;
+    position: relative;
+}
+.photo_2 h3{
+    position: absolute;
+    top:32px;
+    left:32px;
+    font-size: 28px;
+}
+
+.photo_3{
+    width:554px;
+    height: 417px;
+    background: url(../img/jpg/3.jpg);
+    margin: 15px 0;
+    position: relative;
+}
+
+.photo_3 h3{
+    position: absolute;
+    top:32px;
+    left:32px;
+    font-size: 28px;
+
+
+
+}
+
+ /* -----------------------------------------------*/
+
+ footer {
+    height: 657px;
+    background: #316099;
+    flex: none;
+}
+
+ .liner{
+    height: 0;
+    border-top:1px solid rgba(255,255,255, .4);
+ }
+
+ footer button {
+    float: right;
+    background: #5a98d0;
+    height: 56px;
+    width: 237px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin: 101px 0 106px 408px;
+ }
+
+ footer .container {
+    padding: 64px 0;
+    overflow: hidden;
+ }
+
+footer p{
+    color:#fff;
+
+}
+footer h2{
+    color:#fff;
+
+}
+
+ol + p {
+    opacity: 0.4;
+}
+
+/* ==========adaptive================= */
+@media screen and (max-width:1165px) {
+    .container {
+        width: auto;
+        margin: 0 32px;
+}
+
+
+h1{
+font-size: 32px;
+line-height: 38px;
+}
+
+p{
+font-size: 16px;
+line-height: 26px;
+
+
+}
+
+.flex{
+
+    margin-bottom:100px;
+}
+
+header .flex  img{
+    width: 336px;
+    position: absolute;
+    right: 100px;
+    bottom: 254px;
+    z-index: -1;
+  }
+
+
+
+  main .container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .photo_1{
+    height: 297px;
+    width: 704px;
+
+
+
+  }
+
+}
+
+
+
+
+
+
+
+/* =================================== */
+
+@media screen and (max-width:800px) {
+    .container {
+        width: auto;
+        margin: 0 32px;
+}
+
+.flex{
+
+    margin-bottom:50px;
+}
+
+header .flex :first-child{
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  header .flex  img{
+    display:none;
+  }
+  button{
+    width: 220px;
+    height: 56px;
+    background: none;
+    height: 56px;
+    box-shadow: none;
+  }
+/* ================================== */
+
+
+}
